@@ -1,8 +1,11 @@
 const Summary = () => {
   return (
     <>
-      <div class="ml-32 w-full -mt-10">
+      <div class="ml-32 w-full -mt-25">
         <div class="p-12 ">
+          <div class="my-4 text-2xl font-bold">
+            <h1>Cost Summary</h1>
+          </div>
           <div class="grid grid-cols-4 gap-4 mb-4">
             <div class="flex flex-col justify-center rounded-sm border bg-gray-50 h-24">
               <p class="text-gray-500 px-3">Budget</p>
@@ -48,6 +51,9 @@ const Summary = () => {
             <div class="flex items-center justify-center rounded-sm bg-gray-200 h-100">
               <p class="text-2xl text-gray-400 dark:text-gray-500">Yard Stay</p>
             </div>
+          </div>
+          <div class="flex items-center justify-center h-128 mb-4 rounded-sm bg-gray-200">
+            <p class="text-2xl text-gray-400 dark:text-gray-500">Comparison</p>
           </div>
         </div>
       </div>
