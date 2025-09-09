@@ -1,15 +1,15 @@
 function App() {
   return (
     <>
-      <div class="ml-32">
-        <div class="p-12">
-          <div class="h-28 mb-4 bg-[#29a1ff]">
-            <div class="px-3 py-5">
+      <div class="ml-32 w-full">
+        <div class="p-12 ">
+          <div class="h-28 mb-4 flex items-center justify-between px-3 py-5 bg-[#29a1ff]">
+            <div>
               <p class="text-xs font-semibold text-white">OCEAN STAR</p>
               <p class="text-2xl font-semibold text-white">SEPT2020/DD1</p>
               <p class="text-sm text-[#cce9ff]">DD Required change BWT</p>
             </div>
-            <div class="fixed right-50 top-21">
+            <div>
               <button class="bg-white hover:bg-gray-200 text-[#29a1ff] text-sm py-2 px-4 rounded">
                 Start Dry Dock
               </button>
