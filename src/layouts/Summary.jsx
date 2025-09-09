@@ -1,3 +1,9 @@
+import { Chart as ChartJS } from "chart.js/auto";
+import { Bar, Doughnut, Line } from "react-chartjs-2";
+
+import sourceData from "../data/sourceData.json";
+import yardStay from "../data/yardStay.json";
+import statusData from "../data/statusData.json";
 const Summary = () => {
   return (
     <>
@@ -44,16 +50,71 @@ const Summary = () => {
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div class="flex items-center justify-center rounded-sm bg-gray-200 h-100">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">Status</p>
+          <div>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="flex items-center justify-center rounded-sm h-100 border">
+                <Doughnut
+                  data={{
+                    labels: ["Open", "In Progress", "On Hold", "Complete", ""],
+                    datasets: [
+                      {
+                        label: "Count",
+                        data: statusData.map((data) => data.value),
+                        backgroundColor: [
+                          "rgba(255, 99, 132)",
+                          "rgba(54, 162, 235)",
+                          "rgba(255, 206, 86)",
+                          "rgba(704, 162, 235)",
+                          "rgba(15, 206, 86)",
+                        ],
+                        borderRadius: 5,
+                      },
+                    ],
+                  }}
+                />{" "}
+              </div>
+
+              <div class="flex items-center justify-center rounded-sm border h-100">
+                <Doughnut
+                  data={{
+                    labels: ["In Dock", "Repair", ""],
+                    datasets: [
+                      {
+                        label: "Count",
+                        data: yardStay.map((data) => data.value),
+                        backgroundColor: [
+                          "rgba(255, 99, 132)",
+                          "rgba(54, 162, 235)",
+                          "rgba(255, 206, 86)",
+                        ],
+                        borderRadius: 5,
+                        weight: 1,
+                      },
+                    ],
+                  }}
+                />
+              </div>
             </div>
-            <div class="flex items-center justify-center rounded-sm bg-gray-200 h-100">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">Yard Stay</p>
+
+            <div class="flex items-center justify-center h-128 mb-4 rounded-sm">
+              <Bar
+                data={{
+                  labels: ["Open", "In Progress", "On Hold", "Complete", ""],
+                  datasets: [
+                    {
+                      label: "Count",
+                      data: sourceData.map((data) => data.value),
+                      backgroundColor: [
+                        "rgba(255, 99, 132)",
+                        "rgba(54, 162, 235)",
+                        "rgba(255, 206, 86)",
+                      ],
+                      borderRadius: 5,
+                    },
+                  ],
+                }}
+              />
             </div>
-          </div>
-          <div class="flex items-center justify-center h-128 mb-4 rounded-sm bg-gray-200">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">Comparison</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Open",
+    "value": "64"
+  },
+  {
+    "label": "In Progress",
+    "value": "50"
+  },
+  {
+    "label": "On Hold",
+    "value": "68"
+  },
+  {
+    "label": "Complete",
+    "value": "40"
+  },
+  {
+    "label": "",
+    "value": "132"
+  }
+]
