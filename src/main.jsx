@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar.jsx";
 import Summary from "./layouts/Summary.jsx";
 import PurchaseOrders from "./layouts/PurchaseOrders.jsx";
 import Button from "./components/Button.jsx";
+import AdditionalContent from "./layouts/AdditionalContent.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       <Button />
       <App />
       <Summary />
+      <AdditionalContent />
       <PurchaseOrders />
     </div>
   </StrictMode>
