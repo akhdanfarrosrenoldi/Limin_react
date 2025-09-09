@@ -1,8 +1,8 @@
 function App() {
   return (
     <>
-      <div class="ml-32 w-full">
-        <div class="p-12 ">
+      <div class="ml-32 w-full -mt-15">
+        <div class="p-12">
           <div class="h-28 mb-4 flex items-center justify-between px-3 py-5 bg-[#29a1ff]">
             <div>
               <p class="text-xs font-semibold text-white">OCEAN STAR</p>

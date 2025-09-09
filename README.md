@@ -11,3 +11,5 @@ https://vite.dev/guide/
 https://flowbite.com/docs/components/tables/
 
 https://www.chartjs.org/docs/latest/charts/doughnut.html
+
+https://flowbite.com/docs/components/buttons/

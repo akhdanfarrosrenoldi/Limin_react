@@ -96,7 +96,7 @@ const Summary = () => {
               </div>
             </div>
 
-            <div class="flex items-center justify-center h-128 mb-4 rounded-sm">
+            <div class="flex items-center justify-center h-128 mb-4 rounded-sm border">
               <Bar
                 data={{
                   labels: ["Open", "In Progress", "On Hold", "Complete", ""],
